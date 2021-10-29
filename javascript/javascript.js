@@ -3,6 +3,9 @@ const play = document.querySelector("#play");
 const pause = document.querySelector("#pause");
 const backward = document.querySelector("#backward");
 const forward = document.querySelector("#forward");
+const soundOn = document.querySelector("#soundOn");
+const soundOf = document.querySelector("#soundOf");
+
 
 play.addEventListener("click", handleplay);
 pause.addEventListener("click", handlepause);
@@ -33,6 +36,22 @@ function handleForward() {
     console.log(' + 10 segundos', video.currentTime);
 }
 
+soundOn.addEventListener('click', handleSoundOn);
+soundOf.addEventListener('click', handleSoundOf);
+
+function handleSoundOn () {
+  video.volume = 0;
+  soundOn.hidden = true;
+  soundOf.hidden = false;
+}
+
+function handleSoundOf () {
+  video.volume = 1;
+  soundOf.hidden = true;
+  soundOn.hidden = false;
+  
+}
+
 const progress = document.querySelector('#range');
 video.addEventListener('loadedmetadata', handleLoaded );
 video.addEventListener('timeupdate', handleTimeUpdate );
@@ -52,3 +71,4 @@ function handleInput() {
   video.currentTime = progress.value;
   console.log(progress.value);
 }
+

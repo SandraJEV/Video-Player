@@ -4,11 +4,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   height: 100vh;
+  
 }
+
 
 .wrapper {
   max-inline-size: 900px;
   margin: auto;
+  
 }
 
 .player {
@@ -44,15 +47,40 @@ body {
   background: transparent;
   position: absolute;
   inset-block-end: 0;
-  inset-inline: 0;
+  inset-inline: 20px;
   display: flex;
   padding: 10px;
   z-index: 2;
   
+ 
+  
+}
+.sound {
+  background-color: transparent;
+  border: none;
+  padding: 13px 11px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  
+  
+
+}
+.sound:active {
+  transform: scale(.9);
+}
+#soundOn{
+  background-image: url('../assets/images/volumen.png');
+  
+  
+}
+#soundOf{
+  /* border: 10px solid olive; */
+  background-image: url('../assets/images/muted.png');
 }
 
 .player__progress input {
   flex: 1;
+  margin-right: 20px;
   
 }
 

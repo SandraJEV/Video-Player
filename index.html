@@ -12,7 +12,7 @@
         <div class="player">
             <video  id="video" sounfOfd  poster="./assets/images/little-nightmares-2-poster.jpg" src="./assets/videos/Little-Nightmares-Trailer.mp4" ></video>
             <section class="player__overlay">
-                <h2 class="player__title">Little Nightmares - Launch Trailer</h2>
+                <h3 class="player__title">Little Nightmares - Launch Trailer</h3>
                 <section class="player__action">
                     <button class="button" id="backward" aria-label="Retrocede 10 segundos" title="Retrocede 10 segundos"></button>
                     <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
@@ -20,7 +20,9 @@
                     <button class="button" id="forward" aria-label="Avanza 10 segundos" title="Avanza 10 segundos"></button>    
                 </section>
                 <section class="player__progress">
-                    <input id="range" type="range" min"0" value="0" step="1">
+                    <input id="range" type="range"  value="0" step="1">
+                    <button class="sound"  id="soundOn" aria-label="Sonido"  title="Quitar Sonido"></button>
+                    <button class="sound" id="soundOf" aria-label="Quitar Sonido" hidden title="Sonido"></button>
             </section>
         </div>
     </main>

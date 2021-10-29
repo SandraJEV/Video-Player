@@ -5,6 +5,8 @@
     background-color: transparent;
     cursor: pointer;
     background-position: center;
+    background-repeat: no-repeat;
+
 
 
 }
@@ -28,4 +30,8 @@
     background-image: url('../assets/images/play.svg');
     
 }
+#soundOf {
+    background-image: url('../assets/images/mute.png');
+}
+
 
